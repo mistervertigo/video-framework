@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vídeo Template</title>
+    <title>Landing Template</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,51 +26,69 @@
 	      <div class="navbar-header">
 	        <a class="navbar-brand" href="#">Brand</a>
 	      </div>
-		  <div class="navbar-collapse collapse">
-		            <form class="navbar-form navbar-right" role="form">
-		              <div class="form-group">
-		                <input type="text" placeholder="Email" class="form-control">
-		              </div>
-		              <div class="form-group">
-		                <input type="password" placeholder="Password" class="form-control">
-		              </div>
-		              <button type="submit" class="btn btn-success">Sign in</button>
-		            </form>
-		          </div>
-	    </div><!-- /.container-fluid -->
+         <ul class="nav navbar-nav pull-right">
+         	<li class="active"><a href="login.html">Iniciar sesión</a></li>
+         </ul>
+		</div>
 	  </nav>
 	  <!--Contenido-->
-	  <div class="jumbotron"> 
- 		 <div class="container text-center">
-			 <div class="videoWrapper wideScreen">
-				 <script type="text/javascript" src="http://k.uecdn.es/p/110/sp/11000/embedIframeJs/uiconf_id/8705146/partner_id/110"></script>
-				 <object id="kaltura_player_1402060208" name="kaltura_player_1402060208" type="application/x-shockwave-flash" allowFullScreen="true" allowNetworking="all" allowScriptAccess="always" bgcolor="#000000" xmlns:dc="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/searchmonkey/media/" rel="media:video" resource="http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146" data="http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146"><param name="allowFullScreen" value="true" /><param name="allowNetworking" value="all" /><param name="allowScriptAccess" value="always" /><param name="bgcolor" value="#000000" /><param name="flashVars" value="streamerType=hdnetworkmanifest&amp;akamaiHD.loadingPolicy=preInitialize&amp;akamaiHD.asyncInit=true&amp;playlistAPI.autoInsert=true&playlistAPI.kpl0Name=Playlist Boxeo&playlistAPI.kpl0Url=http%3A%2F%2Fk.uecdn.es%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D110%26subp_id%3D11000%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_7tljofge&{FLAVOR}" /><param name="movie" value="http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146" />  </object>
-		</div>
-			<h1>Vídeo en directo</h1>
-		 	<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+	  
+	  <div class="jumbotron text-center"> 
+			<h1>Lorem ipsum dolor</h1>
+		 	<p class="lead">This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+			<!--Si no han comprado-->
+			<p><a class="btn btn-lg btn-success" href="#" role="button">Comprar por 000,00 € <br><small>Evento solo disponible para españa</small></a></p>
+			<!--han comprado pero no empezado-->
+			<p>¡Ya lo tienes comprado!</p>
+			<p><a class="btn btn-lg btn-success" href="#" role="button">Podás verlo el próximo 27 de junio a las 23:00 horas<br><small>Evento solo disponible para españa</small></a></p>
+			<!--han comprado-->
+			<p>¡Ya lo tienes comprado!</p>
+			<p><a class="btn btn-lg btn-success" href="#" role="button"><span class="glyphicon glyphicon-play-circle"></span> Ver el combate<br><small>Evento solo disponible para españa</small></a></p>
+			<!--fuera de españa-->
+			<p>¡Lo sentimos!</p>
+			<p><a class="btn btn-lg btn-default" href="#" role="button" disabled="disabled">Evento solo disponible para españa</a></p>
  		 </div>
 	  </div>
 	  
-	  <div class="container">
-
-		 
+	  <div class="container marketing">
 		 <div class="row">
 		         <div class="col-md-4">
+						<img src="http://placehold.it/200x150" alt="Texto descripción imagen">
 		           <h2>Heading</h2>
 		           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 		           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
 		         </div>
 		         <div class="col-md-4">
+						<img src="http://placehold.it/200x150" alt="Texto descripción imagen">
 		           <h2>Heading</h2>
 		           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 		           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
 		        </div>
 		         <div class="col-md-4">
+						<img src="http://placehold.it/200x150" alt="Texto descripción imagen">
 		           <h2>Heading</h2>
-		           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 		           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-		         </div>
+		        </div>
 		       </div>
+		 <hr>
+		 <div class="row">
+			<div class="col-md-12">
+				<h2>Sub-Header</h2>
+				 <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			</div>
+		 </div>
+		 <hr>
+		 <div class="row featurette">
+			 <div class="col-md-6">
+				 <h2>Heading</h2>
+				 <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+				 <p><a class="btn btn-lg btn-default" href="#" role="button">¡Haz una prueba!</a></p>
+			 </div>
+			 <div class="col-md-6">
+				 <img src="http://placehold.it/500x300" alt="Texto descripción imagen" class="hidden-xs pull-right">
+			 </div>
+		 </div>
 		 <hr>
 		<footer>
         <p>© Company 2014</p>
