@@ -74,20 +74,18 @@ video {
 	font-size:40px;
 	
 }
-.well{
+.login{
 	margin:20px 0;
 	text-align:left;
-}
-.well .page-header{
-	margin:0 0 20px 0;
-}
-.well h1{
-	font-size:24px;
-	margin:0;
-}
-.login{
 	max-width:500px;
 	margin:auto;
+}
+.login .page-header{
+	margin:0 0 20px 0;
+}
+.login h1{
+	font-size:24px;
+	margin:0;
 }
 .btn small{
 	font-size:13px;
