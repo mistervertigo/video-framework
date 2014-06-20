@@ -1,7 +1,7 @@
 .navbar-inverse, .jumbotron{
 	background:#000;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center top;
 	border-color:#000;
 	color:#fff;
 }
@@ -27,14 +27,18 @@
 .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after {
 	display:inline;
 }
+.btn-danger{
+	background-color: #B30009;
+	border-color:#B30009;
+}
 .jumbotron{
 	padding:30px;
-	/*background-image: url(http://i1.ytimg.com/vi/HAtrjI0crAQ/maxresdefault.jpg);*/
+	/*background-image: url(http://estaticos03.orbyt.es/estaticas/promociones/2014/05/marca/boxeo/img/bg-image-mobile.jpg);*/
 	
 }
 .jumbotron h1{
 	margin:auto;
-	text-shadow: 2px 2px 3px #333;
+	text-shadow: 2px 2px 10px #B30009;
 }
 h1, .h1{
 	font-size:30px;
@@ -50,6 +54,10 @@ h1, .h1{
 	border-top: 1px solid #666;
 }
 @media screen and (min-width: 768px) {
+	.jumbotron{
+		/*background-image: url(http://estaticos02.orbyt.es/estaticas/promociones/2014/05/marca/boxeo/img/bg-image.jpg);*/
+	
+	}
 	.jumbotron h1{
 		font-size:40px;
 		width:450px;
@@ -62,6 +70,9 @@ h1, .h1{
 	}
 	.jumbotron hr{
 		width:450px;
+	}
+	.purchase{
+		font-size:26px;
 	}
 }
 
@@ -138,6 +149,6 @@ video {
 	font-size:13px;
 }
 footer{
-	font-size:12px;
-	color:#666;
+	font-size:11px;
+	color:#ccc;
 }
