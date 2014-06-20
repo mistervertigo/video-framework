@@ -1,10 +1,18 @@
 .navbar-inverse, .jumbotron{
-	background:#666;
-	border-color:#666;
+	background:#000;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-color:#000;
 	color:#fff;
 }
 .navbar-inverse .navbar-brand{
 	color:#ddd;
+}
+.navbar-brand{
+	background-image: url(http://estaticos02.orbyt.es/estaticas/promociones/2014/05/marca/boxeo/img/logoMarcaOrbyt.png);
+	background-repeat: no-repeat;
+	background-position: 10px;
+	width: 150px;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
 	background:none;
@@ -16,15 +24,54 @@
 .navbar-static-top {
 	margin-bottom:0;
 }
+.nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after {
+	display:inline;
+}
 .jumbotron{
 	padding:30px;
+	/*background-image: url(http://i1.ytimg.com/vi/HAtrjI0crAQ/maxresdefault.jpg);*/
+	
 }
 .jumbotron h1{
-	font-size:36px;
+	margin:auto;
+	text-shadow: 2px 2px 3px #333;
 }
+h1, .h1{
+	font-size:30px;
+}
+.jumbotron h1 small{
+	color:#ddd;
+	font-size:14px;
+}
+.jumbotron p{
+	font-size:16px;
+}
+.jumbotron hr{
+	border-top: 1px solid #666;
+}
+@media screen and (min-width: 768px) {
+	.jumbotron h1{
+		font-size:40px;
+		width:450px;
+	}
+	.jumbotron h1 small{
+		font-size:20px;
+	}
+	.jumbotron p{
+		font-size:20px;
+	}
+	.jumbotron hr{
+		width:450px;
+	}
+}
+
 .player{
 	background:#fff;
 	color:#333;
+}
+.player h1{
+	text-shadow: 1px 1px 1px #fff;
+	margin-top: 30px;
 }
 video {
   max-width: 100%;
@@ -89,4 +136,8 @@ video {
 }
 .btn small{
 	font-size:13px;
+}
+footer{
+	font-size:12px;
+	color:#666;
 }

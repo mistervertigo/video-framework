@@ -24,7 +24,7 @@
 	    <div class="container-fluid">
 	      <!-- Brand and toggle get grouped for better mobile display -->
 	      <div class="navbar-header">
-	        <a class="navbar-brand" href="#">Brand</a>
+	        <a class="navbar-brand text-hide" href="index.html">Brand</a>
 	      </div>
          <ul class="nav navbar-nav pull-right">
          	<li class="active"><a href="login.html">Iniciar sesión</a></li>
@@ -34,8 +34,11 @@
 	  <!--Contenido-->
 	  
 	  <div class="jumbotron text-center"> 
-			<h1>Lorem ipsum dolor</h1>
-		 	<p class="lead">This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+			<h1><small>World Lightweight Championship</small><br><span class="col-xs-5">Terence Crawford</span><span class="col-xs-2">Vs.</span> <span class="col-xs-5">Yuriokis Gamboa</span></h1>
+			<div class="clearfix"></div>
+			<hr>
+		 	<p class="lead">Sábado, 28 de Junio a las 23:00 horas<br>
+				<small>Omaha, Nebraska</small></p>
 			<!--Si no han comprado-->
 			<p><a class="btn btn-lg btn-success" href="video-player.html" role="button">Comprar por 000,00 € <br><small>Evento solo disponible para españa</small></a></p>
 			<!--han comprado pero no empezado-->
@@ -47,6 +50,23 @@
 			<!--fuera de españa-->
 			<p>¡Lo sentimos!</p>
 			<p><a class="btn btn-lg btn-default" href="video-player.html" role="button" disabled="disabled">Evento solo disponible para españa</a></p>
+			<!--Emisión finalizada-->
+			<p><a class="btn btn-lg btn-danger" href="video-player.html" role="button" disabled="disabled">El evento ha finalizado</a></p>
+			<p>Dinos tu nombre, apellidos y correo electrónico para infromarte de los próximos eventos:</p>
+			<form class="form-inline" role="form">
+ 			  <div class="form-group">
+ 			    <input type="text" class="form-control input-lg" id="exampleInputPassword2" placeholder="Nombre">
+ 			  </div>
+ 			  <div class="form-group">
+ 			    <input type="text" class="form-control input-lg" id="exampleInputPassword2" placeholder="Apellidos">
+ 			  </div>
+			  <div class="form-group">
+			    <input type="email" class="form-control input-lg" id="exampleInputEmail2" placeholder="Correo electrónico">
+			  </div>
+			  <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+			</form>
+			<!--Emisión finalizada-->
+			
  		 </div>
 	  </div>
 	  
@@ -79,13 +99,14 @@
 			</div>
 		 </div>
 		 <hr>
-		 <div class="row featurette">
+		 <div class="row">
 			 <div class="col-md-6">
-				 <h2>Heading</h2>
-				 <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-				 <p><a class="btn btn-lg btn-default" href="video-prueba.html" role="button">¡Haz una prueba!</a></p>
+				 <h2 class=" text-center">Visualízalo en cualquier dispositivo *</h2>
+				 <p class="lead text-center">Antes de comparlo comprueba que puedes verlo:</p>
+				 <p class="text-center"><a class="btn btn-lg btn-default" href="video-prueba.html" role="button">¡Haz una prueba!</a></p>
+				 <hr>
 	  		  <div class="alert alert-warning">
-	  		  	<p><strong>Requerimientos mínimos para su visualización:</strong></p> 
+	  		  	<p><strong>* Requerimientos mínimos para su visualización:</strong></p> 
 	  			<ul>
 	  				<li>Mac, Windows, iOS (Iphone, Ipad).</li>
 	  				<li>Para otros dispositivos o sistemas operativos, se debe asegurar que está soportada la reproducción en HLS de vídeos mp4 con códec h.264.</li>
@@ -97,8 +118,13 @@
 			 </div>
 		 </div>
 		 <hr>
-		<footer>
-        <p>© Company 2014</p>
+		<footer class="text-center">
+		  <ul class="list-inline">
+		  <li>© UNIDAD EDITORIAL INFORMACIÓN GENERAL S.L.U. 2010 . Tlf: 902 999 980 . </li>
+		  <li><a href="mailto:clienteorbyt@orbyt.eslinea">clienteorbyt@orbyt.es</a></li>
+		  <li><a href="http://www.orbyt.es/legal/protecciondedatos.html" target="_blank">Política-Protección de datos</a></li>
+		  <li><a href="http://www.orbyt.es/legal/terminosycondiciones.html" target="_blank">Términos y condiciones</a></li>
+		  </ul>
       </footer>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
