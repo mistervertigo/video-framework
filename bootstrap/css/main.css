@@ -34,8 +34,7 @@
 .jumbotron{
 	padding:30px;
 	background:#000;
-	/*background-image: url(http://estaticos03.orbyt.es/estaticas/promociones/2014/05/marca/boxeo/img/bg-image-mobile.jpg);*/
-	
+	background-image: url(../../bg-image.jpg);
 }
 .jumbotron h1{
 	margin:auto;
