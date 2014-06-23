@@ -41,56 +41,110 @@
 	margin:auto;
 	text-shadow: 2px 2px 10px #B30009;
 }
-h1, .h1{
-	font-size:28px;
+
+
+.jumbotron h1{
+	font-size:40px;
+	width:450px;
 }
 .jumbotron h1 small{
-	color:#ddd;
-	font-size:14px;
-}
-.jumbotron p{
-	font-size:16px;
+	font-size:20px;
+	display:block;
+	margin:0 auto 10px 0;
+	padding:0;
 }
 .jumbotron hr{
 	border-top: 1px solid #666;
-}
-.emailsubs{ 
-	margin:auto;
-}
-@media screen and (min-width: 768px) {
-	.jumbotron{
-		/*background-image: url(http://estaticos02.orbyt.es/estaticas/promociones/2014/05/marca/boxeo/img/bg-image.jpg);*/
-	
-	}
-	.jumbotron h1{
-		font-size:40px;
-		width:450px;
-	}
-	.jumbotron h1 small{
-		font-size:20px;
-	}
-	.jumbotron p{
-		font-size:20px;
-	}
-	.jumbotron hr{
-		width:450px;
-	}
-	.purchase{
-		font-size:26px;
-	}
-	.emailsubs{
-		width:450px; 
-		margin:auto;
-	}
+	width:450px;
 }
 
-.player{
-	background:#fff;
-	color:#333;
+.jumbotron p{
+	font-size:20px;
 }
+
+.purchase{
+	font-size:26px;
+	margin:10px 0;
+}
+.emailsubs{
+	width:450px; 
+	margin:auto;
+}
+ol li{
+	margin:25px auto;
+	width:75%;
+	font-size:16px;
+	color:#444;
+}
+h2{
+	font-size:22px;
+}
+
+.btn small{
+	font-size:12px;
+}
+
+
+
 .player h1{
 	text-shadow: 1px 1px 1px #fff;
 	margin-top: 30px;
+	width:100%;
+}
+.player ol li{
+		margin:25px auto;
+		font-size:20px;
+		width:100%;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	ul.nav{
+		font-size:12px;
+	}
+	.jumbotron{
+		padding:60px 30px 30px 30px;
+		/*background-image: url(http://estaticos03.orbyt.es/estaticas/promociones/2014/05/marca/boxeo/img/bg-image-mobile.jpg);*/
+		
+	}
+	.jumbotron h1{
+		font-size:23px;
+		width:250px
+	}
+	.jumbotron h1 small{
+		color:#ddd;
+		font-size:14px;
+	}
+	.jumbotron p{
+		font-size:14px;
+	}
+
+	.jumbotron hr{
+		width:100%;
+	}
+	.emailsubs{ 
+		margin:auto;
+	}
+	.purchase{
+		font-size:22px;
+	}
+	.btn small{
+		font-size:11px;
+	}
+	ol li{
+		margin:25px auto;
+		font-size:14px;
+		width:100%;
+	}
+	.player h1{
+		font-size:18px;
+	}
+	.player ol li{
+			font-size:14px;
+	}
+}
+.player{
+	padding:30px;
+	background:#fff;
+	color:#333;
 }
 video {
   max-width: 100%;
@@ -132,7 +186,7 @@ video {
 .chrome_35 {
   padding-top: 35px;
 }
-.marketing .col-md-4, .col-md-12 {
+.marketing .col-sm-4, .col-md-12 {
 	margin: 20px 0;
 	text-align: center;
 }
@@ -153,9 +207,7 @@ video {
 	font-size:24px;
 	margin:0;
 }
-.btn small{
-	font-size:13px;
-}
+
 footer{
 	font-size:11px;
 	color:#ccc;
