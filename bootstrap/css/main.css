@@ -221,3 +221,13 @@ footer{
 	font-size:11px;
 	color:#ccc;
 }
+.btn-social{
+	width: 27px;
+	height: 28px;
+}
+.btn-twitter {
+	background: url("../../img/sprite-social.png") -27px 0px no-repeat;
+}
+.btn-facebook {
+	background: url("../../img/sprite-social.png") 0px 0px no-repeat;
+}
