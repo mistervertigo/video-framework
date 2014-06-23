@@ -32,7 +32,7 @@
 .jumbotron{
 	padding:30px;
 	background:#000;
-	background-image: url(http://pruebas.unidadeditorial.com/video-framework/img/bg-image.jpg);
+	background-image: url(../../img/bg-image.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -67,9 +67,13 @@
 	margin:auto;
 }
 
+.jumbotron .alert p{
+	width:100%;
+}
+
 .purchase{
 	font-size:26px;
-	margin:50px auto 40px auto;
+	margin:10px auto 50px auto;
 	width:309px;
 	white-space: normal;
 }
