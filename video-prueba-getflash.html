@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	 <link href="bootstrap/css/main.css" rel="stylesheet">
+	 
+	 <script type="text/javascript" language="JavaScript" src="http://estaticos.orbyt.es/js/comunes.js"></script>
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,39 +41,41 @@
 		  </div>
 		  
  		 <div class="container text-center">
-			 <div class="videoWrapper wideScreen">
-				 
-				 
-				 
-				 <script>
-				var e = document.createElement('script');
-				
-				var attSrc=document.createAttribute("src");
-				var attType=document.createAttribute("type");
-				
-				attType.value="text/javascript";
-				attSrc.value="http://k.uecdn.es/p/110/sp/11000/embedIframeJs/uiconf_id/8705146/partner_id/110";
-				
-				e.setAttributeNode(attSrc);
-				e.setAttributeNode(attType);
-				
-				var swfContent = 
- 
-				        "<object id='kaltura_player_1402060208' name='kaltura_player_1402060208' type='application/x-shockwave-flash' allowFullScreen='true' allowNetworking='all' allowScriptAccess='always' bgcolor='#000000' xmlns:dc='http://purl.org/dc/terms/' xmlns:media='http://search.yahoo.com/searchmonkey/media/' rel='media:video' resource='http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146' data='http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146'>" +
-				            "<param name='allowFullScreen' value='true' />" +
-				            "<param name='allowNetworking' value='all' />" +
-				            "<param name='allowScriptAccess' value='always' />" +
-				            "<param name='bgcolor' value='#000000' />"+
-				            "<param name='flashVars value='streamerType=hdnetworkmanifest&amp;akamaiHD.loadingPolicy=preInitialize&amp;akamaiHD.asyncInit=true&amp;playlistAPI.autoInsert=true&playlistAPI.kpl0Name=Playlist Boxeo&playlistAPI.kpl0Url=http%3A%2F%2Fk.uecdn.es%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D110%26subp_id%3D11000%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_7tljofge&{FLAVOR}' />" +
-							"<param name='movie' value='http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146' />"+
-				        "</object>";
-
-				
-				document.write(swfContent);
-				
-				//document.write('<object id="kaltura_player_1402060208" name="kaltura_player_1402060208" type="application/x-shockwave-flash" allowFullScreen="true" allowNetworking="all" allowScriptAccess="always" bgcolor="#000000" xmlns:dc="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/searchmonkey/media/" rel="media:video" resource="http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146" data="http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146"><param name="allowFullScreen" value="true" /><param name="allowNetworking" value="all" /><param name="allowScriptAccess" value="always" /><param name="bgcolor" value="#000000" /><param name="flashVars" value="streamerType=hdnetworkmanifest&amp;akamaiHD.loadingPolicy=preInitialize&amp;akamaiHD.asyncInit=true&amp;playlistAPI.autoInsert=true&playlistAPI.kpl0Name=Playlist Boxeo&playlistAPI.kpl0Url=http%3A%2F%2Fk.uecdn.es%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D110%26subp_id%3D11000%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_7tljofge&{FLAVOR}" /><param name="movie" value="http://k.uecdn.es/index.php/kwidget/cache_st/1402060208/wid/_110/uiconf_id/8705146" /> </object>');
-				 </script>
-		</div>
+			 
+			 
+			 <div class="videoWrapper wideScreen" id="myplayerbox" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+				 		<span itemprop="description" content="Vídeo prueba combate Crawford vs. Gamboa"></span>
+				 		<span itemprop="name" content="http://k.uecdn.es/index.php/kwidget/cache_st/1401882208/wid/_110/uiconf_id/8705137/entry_id/0_6370pida"></span>
+				 		<span itemprop="width" content="400"></span>
+				 		<span itemprop="height" content="300"></span>
+	  		  
+			 </div>
+		 	<script type="text/javascript" src="http://k.uecdn.es/p/110/sp/11000/embedIframeJs/uiconf_id/8705137/partner_id/110"></script>
+		 	<script type="text/javascript" language="JavaScript" >
+		 			
+		 				kWidget.embed({
+		 					'targetId': 'myplayerbox',
+		 					'wid': '_110',
+		 					'uiconf_id' : '8705137',
+		 					'entry_id' : '0_6370pida',
+		 					'flashvars' : { 
+		 						'autoPlay': true
+		 					},
+		 					'params':{ 
+		 						'wmode': 'transparent' 
+		 					},
+							// Ready callback is issued for this player:
+									'readyCallback': function( playerId ){
+										console.log( "kWidget player ready: " + playerId );
+										var kdp = $( '#' + playerId ).get(0);
+										kdp.kBind( 'doPlay', function(){
+											console.log(  "doPlay called on  " + playerId );
+										});
+									}
+						
+						});
+		 	
+		 	</script>
  		 </div>
 		  
 	  </div>
