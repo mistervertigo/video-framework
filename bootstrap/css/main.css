@@ -177,7 +177,7 @@ video {
 }
 .videoWrapper {
 	position: relative;
-	height: 100px;
+	height: 0;
 }
 
 * html .videoWrapper {
@@ -188,7 +188,8 @@ video {
 .videoWrapper div,
 .videoWrapper embed, 
 .videoWrapper object,
-.videoWrapper iframe {
+.videoWrapper iframe,
+.videoWrapper span {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -198,18 +199,6 @@ video {
 
 .wideScreen {
   padding-bottom: 56.25%;
-}
-
-.fourBYthree {
-  padding-bottom: 75%;
-}
-
-.chrome_25 {
-  padding-top: 25px;
-}
-
-.chrome_35 {
-  padding-top: 35px;
 }
 .marketing .col-sm-4, .col-md-12 {
 	margin: 20px 0;

@@ -43,16 +43,43 @@
  		 <div class="container text-center">
 			 
 			 
-			 <div class="videoWrapper wideScreen" id="myplayerbox" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+			 <div class="videoWrapper wideScreen">
+				 <div id="myplayerbox" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 				 		<span itemprop="description" content="Vídeo prueba combate Crawford vs. Gamboa"></span>
 				 		<span itemprop="name" content="http://k.uecdn.es/index.php/kwidget/cache_st/1401882208/wid/_110/uiconf_id/8705137/entry_id/0_6370pida"></span>
 				 		<span itemprop="width" content="400"></span>
 				 		<span itemprop="height" content="300"></span>
 	  		  
+			 
+			 	  </div>
 			 </div>
 		 	<script type="text/javascript" src="http://k.uecdn.es/p/110/sp/11000/embedIframeJs/uiconf_id/8705137/partner_id/110"></script>
 		 	<script type="text/javascript" language="JavaScript" >
-		 			
+		 			if (getFlashVersion() == 0) {
+						alert("HTML5: 8705140");
+		 				kWidget.embed({
+		 					'targetId': 'myplayerbox',
+		 					'wid': '_110',
+		 					'uiconf_id' : '8705140',
+		 					'entry_id' : '0_6370pida',
+		 					'flashvars' : { 
+		 						'autoPlay': true
+		 					},
+		 					'params':{ 
+		 						'wmode': 'transparent' 
+		 					},
+							// Ready callback is issued for this player:
+									'readyCallback': function( playerId ){
+										console.log( "kWidget player ready: " + playerId );
+										var kdp = $( '#' + playerId ).get(0);
+										kdp.kBind( 'doPlay', function(){
+											console.log(  "doPlay called on  " + playerId );
+										});
+									}
+						
+						});
+					}else{
+						alert("Flash: 8705137");
 		 				kWidget.embed({
 		 					'targetId': 'myplayerbox',
 		 					'wid': '_110',
@@ -74,8 +101,10 @@
 									}
 						
 						});
+					}
 		 	
 		 	</script>
+			
  		 </div>
 		  
 	  </div>
