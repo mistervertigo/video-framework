@@ -5,8 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Combate en directo: Terence Crawford Vs Yuriokis Gamboa - En Marca.com</title>
-	 <meta property="og:title" content="Enhorabuena a los amantes del boxeo! Podrán ver el combate Crawford Vs. Gamboa en @marca!"/>
-	 <meta property="og:image" content="img/fb_154x154.jpg"/>
+
+	 <meta property="og:title" content="Enhorabuena a los amantes del boxeo! Podrán ver el combate Crawford Vs. Gamboa en Marca" />
+	 <meta property="og:description" content="Madrugada del 28 al 29 de junio. Programa especial desde el plató de MARCA con el Combate en Directo y en Alta Definición. http://bit.ly/crawfordvsgamboa" />
+	 <meta property="og:type" content="video.tv_show" />
+	 <meta property="og:url" content="http://www.orbyt.es/estaticas/promociones/2014/06/marca/boxeo/" />
+	 <meta property="og:image" content="http://www.orbyt.es/estaticas/promociones/2014/06/marca/boxeo/img/fb_200x200.jpg" />
+	 <meta property="og:site_name" content="ORBYT"/>
+	 <meta name="twitter:site" content="@marca"/>
+	 <meta name="twitter:title" content="Enhorabuena a los amantes del boxeo! Podrán ver el combate Crawford Vs. Gamboa en @marca!"/>
+	 <meta name="twitter:description" content="Madrugada del 28 al 29 de junio. Programa especial desde el plató de MARCA con el Combate en Directo y en Alta Definición."/>
+	 <meta name="description" content="Combate en directo: Terence Crawford Vs Yuriokis Gamboa - En Marca.com. Madrugada del 28 al 29 de junio. Programa especial desde el plató de MARCA con el Combate en Directo y en Alta Definición.">
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,13 +46,13 @@
 	  </nav>
 	  <!--Contenido-->
 	  
-	  <div class="jumbotron text-center"> 
-			<h1><small>World Lightweight Championship</small><span class="col-xs-5">Crawford</span><span class="col-xs-2 text-muted">Vs.</span> <span class="col-xs-5">Gamboa</span></h1>
+	  <div class="jumbotron text-center" itemscope itemtype="http://schema.org/Event"> 
+			<h1 itemprop="name"><small>World Lightweight Championship</small> <span class="col-xs-5">Crawford</span> <span class="col-xs-2 text-muted">Vs.</span> <span class="col-xs-5">Gamboa</span></h1>
 			<div class="clearfix"></div>
 			<hr>
-		 	<p class="lead">Madrugada del 28 al 29 de junio<br>
-				<small class="text-muted">Programa especial desde el plató de MARCA con el Combate en Directo y en Alta Definición</small></p>
-				<p><small>Emisión en diferido hasta el  13 de julio</small></p>
+		 	<p class="lead" itemprop="startDate" content="2014-06-29T01:30">Madrugada del 28 al 29 de Junio a partir de la 1:30<br>
+				<small class="text-muted"> Programa especial desde el plató de MARCA con el Combate en Directo y en Alta Definición.</small></p>
+				<p><small>El programa se podrá ver en diferido hasta el día 13 de Julio.</small></p>
 			<!--Si no han comprado-->
 			
 			<p><a class="btn btn-lg btn-danger purchase" href="video-player.html" role="button">Comprar por sólo 2,95€<br><small>Evento Disponible solo para España</small></a></p>
@@ -51,9 +60,9 @@
 			<p><small class="text-muted">¡Compártelo con tus amigos!</small></p>
 
 			<p class="btn-group-* center-block">
-			<button type="button" class="btn-social text-hide btn-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.orbyt.es%2Festaticas%2Fpromociones%2F2014%2F05%2Fmarca%2Fboxeo%2F','facebook-share-dialog','width=626,height=436'); envioEventoRedSocial('facebook'); return false;" title="Compartir en Facebook">Facebook</button>
+			<button type="button" class="btn-social text-hide btn-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://www.orbyt.es/estaticas/promociones/2014/06/marca/boxeo','facebook-share-dialog','width=626,height=436'); return false;" title="Compartir en Facebook">Facebook</button>
 	
-				<button type="button" class="btn-social text-hide btn-twitter" onclick="window.open('https://twitter.com/intent/tweet?original_referer=&text=Enhorabuena a los amantes del boxeo! Podrán ver el combate entre Terence Crawford y Yuriokis Gamboa en @marca! #boxeoenmarca&tw_p=tweetbutton&url=http://www.orbyt.es/estaticas/promociones/2014/05/marca/boxeo/','twitter-share-dialog','width=626,height=436'); envioEventoRedSocial('twitter'); return false;" title="Compartir en Twitter">Twitter</button>
+				<button type="button" class="btn-social text-hide btn-twitter" onclick="window.open('https://twitter.com/intent/tweet?original_referer=&text=Enhorabuena%20a%20los%20amantes%20del%20boxeo!%20Podr%C3%A1n%20ver%20el%20combate%20entre%20Crawford%20y%20Gamboa%20en%20%40marca!%20%23boxeoenmarca&tw_p=tweetbutton&url=http://bit.ly/crawfordvsgamboa','twitter-share-dialog','width=626,height=436'); envioEventoRedSocial('twitter'); return false;" title="Compartir en Twitter">Twitter</button>
 	
 			</p>
  		 </div>
@@ -73,26 +82,35 @@
 		        </div>
 		         <div class="col-sm-4">
 						<img src="img/gamboa.jpg" width="220" height="174" alt="Yuriokis Gamboa">
-		           <h2>Podrás verlo en directo y en diferido, hasta el  13 de julio</h2>
-		           <p>Los usuarios podrán verlo cuando lo deseen en las siguientes horas o días todo lo acontecido.</p>
+		           <h2>Podrás verlo en directo y en diferido</h2>
+		           <p>El programa se podrá ver en diferido hasta el día 13 de Julio.</p>
 		        </div>
 		       </div>
 		 <hr>
 		 <div class="row">
 			<div class="col-md-12">
 				<h2>Todo el programa de la velada</h2>
-				 <ol class="text-left">
-					 <li>Análisis del combate estelar y la velada y debate con los invitados. <strong>Emilio Marquiegui</strong> estará <strong>presentando junto a Jaime Ugarte</strong>, y les acompañarán como <strong>invitados</strong> <strong>José Legrá, doble campeón mundial del peso pluma en 1968 y 1972</strong>, y el <strong>exseleccionador español de boxeo olímpico, Manel Berdonce</strong>.</li>
-					 <li>Combate entre el imbatido canadiense <strong>Michael Zewski que buscará el título norteamericano del peso wélter ante el púgil de origen ghanés Prince Doku Jr</strong>. El canadiense tiene 25 años, de gran carrera amateur y busca una oportunidad para disputar en breve el título mundial.</li>
-					 <li>Segundo combate de la velada entre el ruso <strong>Matt Korobov, doble campeón mundial amateur</strong>, imbatido como profesional tras 23 combates, que <strong>se enfrenta al joven pegador venezolano José Uzcategui</strong>, que tampoco conoce la derrota. Es un combate trampolín para disputar el mundial del peso medio, dado que Korobov es el número 3 en las listas de la WBO.</li>
-					 <li><strong>Combate estelar, el campeonato del mundo WBO del peso ligero entre el campeón norteamericano Terence Crawford y el aspirante cubano, excampeón mundial del peso pluma, Yuriorkis Gamboa.</strong></li>
-				 </ol>
+				 <div class="programa text-justify">
+					 <h4><span class="label label-default">01:30 h *</span> Previa </h4>
+					 <p class="text-muted">Análisis del combate estelar y la velada y debate con los invitados. <strong>Emilio Marquiegui</strong> estará <strong>presentando junto a Jaime Ugarte</strong>, y les acompañarán como <strong>invitados</strong> <strong>José Legrá, doble campeón mundial del peso pluma en 1968 y 1972</strong>, y el <strong>exseleccionador español de boxeo olímpico, Manel Berdonce</strong>.</p>
+					 
+					 <h4><span class="label label-default">03:00 h *</span> Michael Zewski Vs. Prince Doku Jr</h4>
+					 <p class="text-muted">Combate entre el imbatido canadiense <strong>Michael Zewski que buscará el título norteamericano del peso wélter ante el púgil de origen ghanés Prince Doku Jr</strong>. El canadiense tiene 25 años, de gran carrera amateur y busca una oportunidad para disputar en breve el título mundial.</p>
+					 
+					 <h4><span class="label label-default">04:00 h *</span> Matt Korobov Vs. José Uzcategui</h4>
+					 <p class="text-muted">Segundo combate de la velada entre el ruso <strong>Matt Korobov, doble campeón mundial amateur</strong>, imbatido como profesional tras 23 combates, que <strong>se enfrenta al joven pegador venezolano José Uzcategui</strong>, que tampoco conoce la derrota. Es un combate trampolín para disputar el mundial del peso medio, dado que Korobov es el número 3 en las listas de la WBO.</p>
+					 
+					 <h4><span class="label label-danger">05:00 h *</span> <strong>Terence Crawford Vs. Yuriorkis Gamboa</strong></h4>
+					 <p class="text-muted">Combate estelar, el campeonato del mundo WBO del peso ligero entre el campeón norteamericano <strong>Terence Crawford</strong> y el <strong>aspirante cubano</strong>, excampeón mundial del peso pluma, <strong>Yuriorkis Gamboa</strong>.</p>
+					 
+					 <p class="text-muted"><small>* Horario estimado en función de la finalización de los comabates. Zona horaria España - Hora de Europa Occidental (UTC+00:00)</small></p>
+				 </div>
 			</div>
 		 </div>
 		 <hr>
 		 <div class="row">
 			 <div class="col-md-12">
-				 <h2 class=" text-center">Visualízalo en cualquier dispositivo *</h2>
+				 <h2 class=" text-center">Visualízalo en cualquier dispositivo</h2>
 				 <p class="lead text-center">Antes de comparlo comprueba que puedes verlo:</p>
 				 <p class="text-center"><a class="btn btn-lg btn-danger" href="video-prueba.html" role="button">¡Haz una prueba!</a></p>
 				 <br>

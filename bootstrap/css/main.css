@@ -25,7 +25,7 @@
 .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after {
 	display:inline;
 }
-.btn-danger{
+.btn-danger, .label-danger{
 	background-color: #B30009;
 	border-color:#B30009;
 }
@@ -81,12 +81,17 @@
 	width:450px; 
 	margin:auto;
 }
-ol li{
-	margin:25px auto;
+.programa{
 	width:75%;
-	font-size:16px;
-	color:#444;
-	list-style-type: none;
+	margin:auto;
+	margin-top:30px;
+}
+.programa h4{
+	line-height:32px;
+}
+.programa p{
+	margin-top:10px;
+	margin-bottom:40px;
 }
 h2{
 	font-size:22px;
@@ -95,17 +100,21 @@ h2{
 .btn small{
 	font-size:12px;
 }
-
 .player h1{
 	text-shadow: 1px 1px 1px #fff;
 	margin-top: 30px;
 	width:100%;
 	color:#000;
 }
-.player ol li{
-		margin:25px auto;
-		font-size:16px;
-		width:100%;
+.player .programa{
+	margin:auto;
+	margin-top:30px;
+}
+.player .programa p{
+	margin-top:10px;
+	margin-bottom:40px;
+	font-size:14px;
+	width:100%;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
 	ul.nav{
@@ -143,15 +152,17 @@ h2{
 	.btn small{
 		font-size:11px;
 	}
-	ol li{
-		margin:25px auto;
-		font-size:14px;
+	.programa{
 		width:100%;
+		margin:auto;
+	}
+	.programa p{
+		margin-bottom:30px;
 	}
 	.player h1{
 		font-size:18px;
 	}
-	.player ol li{
+	.player .programa p{
 			font-size:14px;
 	}
 }
