@@ -11,7 +11,7 @@
 	 <link href="bootstrap/css/main.css" rel="stylesheet">
 	 
    <script type="text/javascript" language="JavaScript" src="http://estaticos.orbyt.es/js/comunes.js"></script>
-   <script type="text/javascript" src="http://k.uecdn.es/p/110/sp/11000/embedIframeJs/uiconf_id/8705137/partner_id/110"></script>
+   <script type="text/javascript" src="http://k.uecdn.es/p/110/sp/11000/embedIframeJs/uiconf_id/8705140/partner_id/110"></script>
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -47,24 +47,33 @@
 			 <div class="videoWrapper wideScreen">
 				 <div id="myplayerbox" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 				 		<span itemprop="description" content="Vídeo prueba combate Crawford vs. Gamboa"></span>
-				 		<span itemprop="name" content="http://k.uecdn.es/index.php/kwidget/cache_st/1401882208/wid/_110/uiconf_id/8705137/entry_id/0_6370pida"></span>
+				 		<span itemprop="name" content="http://k.uecdn.es/index.php/kwidget/cache_st/1401882208/wid/_110/uiconf_id/8705140/entry_id/0_6370pida"></span>
 				 		<span itemprop="width" content="400"></span>
 				 		<span itemprop="height" content="300"></span>
 			 	  </div>
-				<script>
-					kWidget.embed({
-						'targetId': 'myplayerbox',
-						'wid': '_109',
-						'uiconf_id' : '8705140',
-						'entry_id' : '0_n7aqbwbx',
-						'flashvars':{ 
-							'autoPlay': true
-						},
-						'params':{ 
-							'wmode': 'transparent' 
-						}
-					});
-				</script>
+			  	<script type="text/javascript" language="JavaScript" >
+			  	function pintaplayerkwidget(divid, uiid, entryid){
+			  					kWidget.embed({
+			  						'targetId': ''+divid+'',
+			  						'wid': '_109',
+			  						'uiconf_id' : ''+uiid+'',
+			  						'entry_id' : ''+entryid+'',
+			  						'flashvars':{ 
+			  							'autoPlay': true
+			  						},
+			  						'params':{ 
+			  							'wmode': 'transparent' 
+			  						}
+			  					});
+			  	}
+ 	
+ 	
+			   			if (getFlashVersion() == 0) {
+			  				pintaplayerkwidget('myplayerbox', '8705140', '0_n7aqbwbx')
+			  			}else{
+			  				pintaplayerkwidget('myplayerbox', '8705137', '0_n7aqbwbx')
+			  			}
+			   	</script>
 			 </div>
 		 	
 			
@@ -94,38 +103,7 @@
   
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	<script type="text/javascript" language="JavaScript" >
-	/*function pintaplayerkwidget(divid, uiid, entryid){
-		kWidget.embed({
-			'targetId': ''+divid+'',
-			'wid': '_110',
-			'uiconf_id' : ''+uiid+'',
-			'entry_id' : ''+entryid+'',
-			'flashvars' : { 
-				'autoPlay': true
-			},
-			'params':{ 
-				'wmode': 'transparent' 
-			},
-			// Ready callback is issued for this player:
-					'readyCallback': function( playerId ){
-						console.log( "kWidget player ready: " + playerId );
-						var kdp = $( '#' + playerId ).get(0);
-						kdp.kBind( 'doPlay', function(){
-							console.log(  "doPlay called on  " + playerId );
-						});
-					}
 	
-		});
-	}
- 	
- 	
- 			if (getFlashVersion() == 0) {
-				pintaplayerkwidget('myplayerbox', '8705140', '0_n7aqbwbx')
-			}else{
-				pintaplayerkwidget('myplayerbox', '8705137', '0_n7aqbwbx')
-			}*/
- 	</script>
 
 	
   </body>
