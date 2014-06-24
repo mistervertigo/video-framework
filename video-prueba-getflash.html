@@ -107,12 +107,33 @@
 		});
 	}
  	
+	kWidget.embed({
+		'targetId': 'myplayerbox',
+		'wid': '_110',
+		'uiconf_id' : '8705140',
+		'entry_id' : '0_n7aqbwbx',
+		'flashvars' : { 
+			'autoPlay': true
+		},
+		'params':{ 
+			'wmode': 'transparent' 
+		},
+		// Ready callback is issued for this player:
+				'readyCallback': function( playerId ){
+					console.log( "kWidget player ready: " + playerId );
+					var kdp = $( '#' + playerId ).get(0);
+					kdp.kBind( 'doPlay', function(){
+						console.log(  "doPlay called on  " + playerId );
+					});
+				}
+
+	});
  	
- 			if (getFlashVersion() == 0) {
+ 		/*	if (getFlashVersion() == 0) {
 				pintaplayerkwidget('myplayerbox', '8705140', '0_n7aqbwbx')
 			}else{
 				pintaplayerkwidget('myplayerbox', '8705137', '0_n7aqbwbx')
-			}
+			}*/
  	</script>
 
 	
